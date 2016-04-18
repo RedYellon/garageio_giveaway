@@ -2,7 +2,27 @@
 <html>
 <head>
     <title>Garageio - Installation</title>
-    <include href="ui/template/head_install.htm" />
+    
+    <link rel="icon" type="image/png" href="ui/img/favicon.png">
+    
+    <meta charset="UTF-8">
+    <meta name="copyright" content="2015">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Garageio gives you the control of your garage door by turning your phone into your garage door opener">
+    <meta name="keywords" content="Garageio,garage,door opener,garage,garage doors,garage door,liftmaster,garage door opener app">
+    <meta name="author" content="Alottazs Labs">
+    
+    <link rel="stylesheet" href="ui/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="ui/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="ui/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="ui/css/hover.min.css" type="text/css" />
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="ui/css/garageio.css" type="text/css" />
+    <link rel="stylesheet" href="ui/css/install.css" type="text/css" />
+
+    <script src="//use.typekit.net/cib4yss.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
 </head>
 <body>
 	<div id="wrap" class="install">
@@ -11,94 +31,18 @@
             <br />            
 
             <div class="header">
-              <a href="/" alt="Garageio Home"><img src="/ui/install/img/Garageio_Logo.png" /></a>
+              <a href="/" alt="Garageio Home"><img src="ui/img/Garageio_Logo.png" /></a>
             </div>
 
             <div class="row">
               <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               
-              	<h1 class="title">Install Garageio</h1>
+              	<h1 class="title">Garageio Giveaway</h1>
               
-              	<div class="white-window">
-              	
-                	<h3>THANK YOU FOR PURCHASING GARAGEIO!</h3>
-                  <h4>You’re on your way to a smarter garage</h4>
-
-                	<p>Installation can be completed in as little as 15 minutes per door and requires no special tools. You’ll just need:</p>
-
-                  <ul>
-                      <li>A screwdriver</li>
-                      <li>A stepladder</li>
-                      <li>A few pieces of masking tape</li>
-                      <li>Your Android phone, iPod Touch or iPhone.</li>
-                  </ul>
-
-                  <p>That’s it! Select your number of garage doors below to get started.</p>
-
-                	<h5>NUMBER OF DOORS:</h5>
-
-                  <div class="row">
-                    <div class="col-sm-7">
-                      <div class="select-style" style="width:100% !important">
-                        <select id="select_doors" style="width:100% !important;">
-                          <option value="0">Choose doors</option>
-                          <option value="1">1 door</option>
-                          <option value="2">2 doors</option>
-                          <option value="3">3 doors</option>
-                        </select>
-                      </div>
-                      <form id="form_number_of_doors" method="get" action="/install/step1/1" style="padding-top:20px;">
-                        <button class="button" type="submit">BEGIN INSTALLATION &rarr;</button>
-                      </form>
-
-                    </div>
-                  </div>
-             			
-                  <div class="printable-instructions" style="display:none;">
-                    <h5>OR, Download Printable Instructions:</h5>
-
-                    <!-- One Door -->
-                    <div class="one-door">
-                      <p style="margin:20px 0;">
-                        <a href="http://d2800a1b66964cc9c2f5-0ad308cf982faa8a0dd705374d5448fc.r16.cf2.rackcdn.com/instructions/Garageio_Printable_Install_1_Door.pdf" target="_blank">
-                          <img src="/ui/install/img/Icon_PDF.jpg" width="47" />
-                        </a>
-                        <a href="http://d2800a1b66964cc9c2f5-0ad308cf982faa8a0dd705374d5448fc.r16.cf2.rackcdn.com/instructions/Garageio_Printable_Install_1_Door.pdf" target="_blank">  
-                          1 Door Instructions
-                        </a> (57KB)</p>
-                    </div>
-                    
-                    <!-- Two Door -->
-                    <div class="two-door">
-                      <p style="margin:20px 0;">
-                        <a href="http://d2800a1b66964cc9c2f5-0ad308cf982faa8a0dd705374d5448fc.r16.cf2.rackcdn.com/instructions/Garageio_Printable_Install_2_Door.pdf" target="_blank">
-                          <img src="/ui/install/img/Icon_PDF.jpg" width="47" />
-                        </a>  
-                        <a href="http://d2800a1b66964cc9c2f5-0ad308cf982faa8a0dd705374d5448fc.r16.cf2.rackcdn.com/instructions/Garageio_Printable_Install_2_Door.pdf" target="_blank">  
-                          2 Door Instructions
-                        </a> (57KB)</p>
-                    </div>
-                    
-                    <!-- Three Door -->
-                    <div class="three-door">
-                      <p style="margin:20px 0;">
-                        <a href="http://d2800a1b66964cc9c2f5-0ad308cf982faa8a0dd705374d5448fc.r16.cf2.rackcdn.com/instructions/Garageio_Printable_Install_3_Door.pdf" target="_blank">
-                          <img src="/ui/install/img/Icon_PDF.jpg" width="47" />
-                        </a>  
-                        <a href="http://d2800a1b66964cc9c2f5-0ad308cf982faa8a0dd705374d5448fc.r16.cf2.rackcdn.com/instructions/Garageio_Printable_Install_3_Door.pdf" target="_blank">
-                          3 Door Instructions
-                        </a> (61KB)</p>
-                    </div>
-
-                  </div>
-
-                  <br/>
-
-             		</div>
-
-                <div class="clearfix back">
-                  <a href="http://help.garageio.com">NEED HELP? VISIT OUR SUPPORT PAGE &rarr;</a>
-                </div>
+                <form>
+                  <input type="email" value name="EMAIL" class="email">
+                  <button class="button" type="submit">SUBMIT</button>
+                </form>
               	
               </div>
           </div>
