@@ -34,14 +34,13 @@
               <a href="/" alt="Garageio Home"><img src="Garageio_Logo.png" /></a>
             </div>
 
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="">
+            <h1 class="title">Garageio Giveaway</h1>
+              <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-2 col-sm-offset-1">
               
-              	<h1 class="title">Garageio Giveaway</h1>
-              
-                <form>
+                <form class="new-update-form">
                   <input type="email" value name="EMAIL" class="email" placeholder="Your Email" required>
-                  <button class="button" type="submit">SUBMIT</button>
+                  <button class="large" type="submit" style="padding: 10px 20px;">SUBMIT</button>
                 </form>
               	
               </div>
@@ -49,51 +48,6 @@
         </div> <!-- .container -->
     </div> <!-- #wrap -->
 
-    <script type="text/javascript" src="/ui/js/jquery.js"></script>
-    <script type="text/javascript" src="/ui/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-
-        var buttonEnabled = false;
-        
-        $("#select_doors").on("change", function() {
-          $(".doors").hide();
-          console.log($(this).val());
-           if($(this).val() == "0") {
-            buttonEnabled = false;
-            $(".printable-instructions").hide();
-           } else if($(this).val() == "1") {
-             buttonEnabled = true;
-             $("#form_number_of_doors").attr('action', "/install/step1/1");
-             $(".printable-instructions > div").hide();
-             $(".printable-instructions, .printable-instructions .one-door").show();
-           } else if($(this).val() == "2") { 
-             buttonEnabled = true;
-             $("#form_number_of_doors").attr('action', "/install/step1/2");
-             $(".printable-instructions > div").hide();
-             $(".printable-instructions, .printable-instructions .two-door").show();
-           } else if($(this).val() == "3") {
-             buttonEnabled = true;
-             $("#form_number_of_doors").attr('action', "/install/step1/3");
-             $(".printable-instructions > div").hide();
-             $(".printable-instructions, .printable-instructions .three-door").show();
-           }
-        });
-
-        $("#form_number_of_doors").on('submit', function(){
-          if(buttonEnabled) {
-            return true;
-          } else {
-            $(".select-style").addClass('animated pulse').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function() {
-              $(this).removeClass("animated pulse");
-            }); 
-            return false;
-          }
-        });
-          
-      });
-      
-    </script>
     
 </body>
 </html>
