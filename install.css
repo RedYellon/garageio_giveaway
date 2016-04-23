@@ -23,17 +23,17 @@ iframe {
 
 p {
 	margin-top: 20px;
-	line-height: 20px;
+	line-height: 22px;
 	color: #fff;
-	font-size: 14px;
+	font-size: 18px;
 }
 
-.header {
+#mc_embed_signup, .header {
 	margin: 0 25px;
 }
 
-.footer {
-	margin: 0 25px;
+.bottom {
+	margin: -100px 0 25px;
 }
 
 form.new-update-form input {
