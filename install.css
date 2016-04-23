@@ -1,10 +1,6 @@
 
 html {
-	background: url('Background_FullScreen.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+  	background-color: #030717;
 }
 
 html, body {
@@ -23,6 +19,29 @@ a {
 iframe {
 	max-width: 100%;
 	margin: 20px 0;
+}
+
+p {
+	margin-top: 20px;
+	line-height: 20px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.header {
+	margin: 0 25px;
+}
+
+.footer {
+	margin: 0 25px;
+}
+
+form.new-update-form input {
+	margin-bottom: 10px;
+}
+form.new-update-form button {
+	margin: 0;
+	width: 100%;
 }
 
 /* === === */
@@ -45,234 +64,4 @@ iframe {
 .install span.part {
 	display: inline;
 	color: ;
-}
-
-.install .tip p {
-	color: #f37344;
-}
-
-.install .gif img {
-	margin: 20px 0;
-}
-
-.install .back {
-	margin: 60px 0;
-	text-align: center;
-}
-
-.install .back a {
-	font-family: "canada-type-gibson", sans-serif !important;
-	font-weight: 600;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	color: #fff !important;
-	font-size: 14px !important;
-}
-
-.install .back a:hover {
-	color: #f05a22 !important;
-	text-decoration: none;
-}
-
-.white-window {
-	background-color: white;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.47);
-	-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.47);
-	box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.47);
-	padding: 30px 40px;
-}
-
-.white-window h3 {
-	margin: 10px 0 0 0;
-	font-family: "canada-type-gibson", sans-serif !important;
-	font-weight: 600;
-	letter-spacing: 2px;
-	color: #333;
-	font-size: 16px !important;
-	text-transform: uppercase;
-	text-align: center;	
-}
-
-.white-window h4 {
-	margin: 20px 0 30px 0;
-	font-family: "canada-type-gibson", sans-serif !important;
-	font-weight: 300;
-	line-height: 30px;
-	color: #f05a22 !important;
-	font-size: 30px !important;
-	text-align: center;	
-}
-
-.white-window h5 {
-	margin: 20px 0 10px 0;
-	font-family: "canada-type-gibson", sans-serif !important;
-	font-weight: 600;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	color: #333 !important;
-	font-size: 14px !important;
-}
-
-.white-window .image {
-	margin: 20px 0;
-}
-
-.white-window .install-number {
-	margin-bottom: 15px;
-}
-
-.white-window .install-number img {
-	max-width: 30px;
-}
-
-.white-window p {
-	font-family: "canada-type-gibson", sans-serif;
-	font-weight: 400;
-	line-height: 25px;
-	font-size: 17px;
-	color: #333;
-}
-
-.white-window strong {
-	font-weight: 600;
-}
-
-.white-window p.cta {
-	font-family: "canada-type-gibson", sans-serif;
-	font-weight: 300;
-	line-height: 32px;
-	font-size: 24px;
-	color: #f05a22;
-	font-style: italic;
-	margin: 0;
-	padding: 0;
-}
-
-.white-window ul {
-	list-style: none;
-}
-
-.white-window ul li,
-.white-window dl dt {
-	font-size: 17px;
-	font-weight: 400;
-	line-height: 20px;
-}
-
-.white-window ul li:before {
-    content: "• ";
-    color: #f37344;
-}
-
-.white-window ul li {
-	margin-bottom: 5px;
-}
-
-.white-window dl dt {
-	margin-bottom: 10px;
-}
-
-.white-window .select-style
-{
-  display: inline-block;
-  overflow: hidden;
-  background: url('/ui/install/img/Dropdown.png') no-repeat right #fff;
-  border: 1px solid #CCC;
-}
-
-.white-window .select-style select
-{
-  display: inline-block;
-  -webkit-appearance: none;
-  background: transparent;
-  border: 1px solid #CCC;
-  padding: 8px 50px 8px 10px;
-  border: 0;
-  border-radius: 0;
-  outline: 0;
-}
-
-.white-window .controls {
-	margin-top: 25px;
-	margin-botton: 20px;
-}
-
-.white-window .button {
-	display: inline-block;
-	font-family: "canada-type-gibson", sans-serif;
-    color: #FFFFFF !important;
-    font-size: 14px;
-    font-weight: 600;
-    letting-spacing: 5px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    border: 0;
-    padding: 10px 30px;
-    background: #f37344;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzNzM0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMDVhMjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top,  #f37344 0%, #f05a22 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f37344), color-stop(100%,#f05a22));
-    background: -webkit-linear-gradient(top,  #f37344 0%,#f05a22 100%);
-    background: -o-linear-gradient(top,  #f37344 0%,#f05a22 100%);
-    background: -ms-linear-gradient(top,  #f37344 0%,#f05a22 100%);
-    background: linear-gradient(to bottom,  #f37344 0%,#f05a22 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f37344', endColorstr='#f05a22',GradientType=0 );
-}
-
-.white-window .button:hover {
-	background: #f05a22;
-}
-
-.white-window .button-gray {
-	display: inline-block;
-	font-family: "canada-type-gibson", sans-serif;
-    color: #FFFFFF !important;
-    font-size: 14px;
-    font-weight: 600;
-    letting-spacing: 5px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    height: 40px;
-    border: 0;
-    padding: 10px 20px;
-    background: #b8b8b8;
-    margin-right: 10px;
-}
-
-.white-window .button-gray:hover {
-	background: #aaa;
-}
-
-.white-window .letter-a,
-.white-window .letter-b,
-.white-window .letter-c,
-.white-window .letter-d,
-.white-window .letter-e,
-.white-window .letter-f {
-	display: inline-block;
-	margin-right: 10px;
-	background-size: 20px 20px;
-	width: 20px;
-	height: 20px;
-	vertical-align: top;
-}
-
-.white-window .letter-a { background-image: url("/ui/install/img/Letter_A.png"); }
-.white-window .letter-b { background-image: url("/ui/install/img/Letter_B.png"); }
-.white-window .letter-c { background-image: url("/ui/install/img/Letter_C.png"); }
-.white-window .letter-d { background-image: url("/ui/install/img/Letter_D.png"); }
-.white-window .letter-e { background-image: url("/ui/install/img/Letter_E.png"); }
-.white-window .letter-f { background-image: url("/ui/install/img/Letter_F.png"); }
-
-#mfg_select select, #models_select select {
-	min-width: 200px !important;
-}
-
-#models_select, img#opener {
-	display: none;
 }
